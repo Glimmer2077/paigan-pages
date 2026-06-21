@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>牌感隐私政策</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080716;
+      --panel: rgba(27, 21, 48, 0.9);
+      --panel-2: rgba(39, 31, 70, 0.72);
+      --text: #f7efd9;
+      --muted: #bcb0ca;
+      --gold: #dfbd68;
+      --line: rgba(223, 189, 104, 0.34);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Songti SC", "STSong", "Iowan Old Style", Georgia, serif;
+      line-height: 1.75;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(86, 61, 142, 0.48), transparent 28rem),
+        radial-gradient(circle at 82% 28%, rgba(126, 95, 166, 0.26), transparent 24rem),
+        linear-gradient(180deg, #10102b 0%, var(--bg) 58%, #050510 100%);
+      min-height: 100vh;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    .hero,
+    section {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 16px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero {
+      padding: 40px;
+      margin-bottom: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "✦";
+      position: absolute;
+      right: 34px;
+      top: 24px;
+      color: var(--gold);
+      font-size: 28px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 28px 32px;
+      margin: 18px 0;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.12;
+    }
+
+    h2 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    p,
+    li {
+      font-size: 17px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 1.25em;
+      margin: 10px 0 0;
+    }
+
+    .meta {
+      display: grid;
+      gap: 8px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .note {
+      border-left: 3px solid var(--gold);
+      background: var(--panel-2);
+      padding: 14px 16px;
+      border-radius: 10px;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--gold);
+    }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 18px 0 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 24px, 920px);
+        padding: 28px 0;
+      }
+
+      .hero,
+      section {
+        border-radius: 12px;
+      }
+
+      .hero {
+        padding: 30px 24px;
+      }
+
+      section {
+        padding: 22px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <h1>牌感隐私政策</h1>
+      <p>牌感是一款塔罗学习与自我反思工具。当前版本以本地保存为核心,不上传用户日记、问题、解读或学习记录。</p>
+      <div class="meta">
+        <span>生效日期:2026-06-21</span>
+        <span>运营者 / 开发者:shuai yuan</span>
+        <span>联系邮箱:1096443302@qq.com</span>
+        <span>隐私政策公开 URL:https://glimmer2077.github.io/paigan-pages/privacy.html</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. 我们如何定位这款 App</h2>
+      <p>牌感帮助用户通过“先解读,后揭示”和每日复盘练习塔罗牌义。它不提供医疗、法律、财务等专业建议,也不承诺预测未来。用户在 App 中记录的内容应被视为个人学习笔记和自我观察材料。</p>
+    </section>
+
+    <section>
+      <h2>2. 当前版本是否收集个人数据</h2>
+      <p>当前版本不收集个人数据。</p>
+      <ul>
+        <li>不需要注册或登录账号。</li>
+        <li>不要求填写姓名、手机号、邮箱或身份证明。</li>
+        <li>不上传日记、问题、解读、复盘、学习进度或牌阵记录。</li>
+        <li>不会自动上传用户在问题反馈中填写的内容;只有用户主动发送反馈邮件时,邮件内容才会离开设备。</li>
+        <li>不接入广告 SDK。</li>
+        <li>不接入第三方分析 SDK。</li>
+        <li>不接入外部 AI API。</li>
+        <li>不进行跨 App 或跨网站追踪。</li>
+      </ul>
+      <p>用户在 App 中输入的内容默认保存在设备本机,不会被开发者或第三方服务器接收。</p>
+    </section>
+
+    <section>
+      <h2>3. App 会在本机保存哪些内容</h2>
+      <ul>
+        <li>今日一抽记录:抽到的牌、问题、用户自己的解读、揭示后的自评。</li>
+        <li>日记与复盘:用户填写的实际发生、偏差、晚上复盘等内容。</li>
+        <li>学习进度:阶段勾选、单张牌熟练度、下次复习时间。</li>
+        <li>个人牌义笔记:用户为某张牌整理的个人理解。</li>
+        <li>牌阵记录:三张牌阵的问题、抽到的牌、用户整体解读和事后复盘。</li>
+        <li>首次使用引导状态:是否已经看过新手引导。</li>
+      </ul>
+      <p>这些数据用于让用户回看自己的学习过程、继续复习和导出记录。</p>
+    </section>
+
+    <section>
+      <h2>4. 数据存储在哪里</h2>
+      <p>当前版本的数据保存在用户自己的设备上。如果用户删除 App,这些本机数据通常也会随 App 一起被删除。是否能通过系统备份恢复,取决于用户自己的设备备份设置。</p>
+    </section>
+
+    <section>
+      <h2>5. 数据导出</h2>
+      <p>牌感提供本地 JSON 导出功能。用户可以在 App 的设置页面主动生成导出文件,并通过系统分享面板保存或发送。</p>
+      <p class="note">导出文件可能包含用户写下的问题、日记、复盘和个人牌义笔记。请妥善保存,避免发给不信任的人或公开上传。</p>
+    </section>
+
+    <section>
+      <h2>6. 网络、广告、分析与 AI</h2>
+      <ul>
+        <li>不依赖网络即可使用核心功能。</li>
+        <li>不展示广告。</li>
+        <li>不使用第三方分析服务。</li>
+        <li>不使用外部 AI API。</li>
+        <li>App 内的“教练”功能是本机规则提示,不会把用户文本发给模型或服务器。</li>
+      </ul>
+      <p>如果未来版本加入 DeepSeek、Qwen、Apple FoundationModels、云同步、账号系统、付费功能、崩溃日志、数据分析或其他外部服务,我们会在上线前更新本隐私政策,并在必要时取得用户同意。</p>
+    </section>
+
+    <section>
+      <h2>7. 第三方共享</h2>
+      <p>当前版本不会把用户数据共享给第三方。用户主动使用系统分享面板导出或发送文件,或在设置页主动发送问题反馈邮件时,后续处理取决于用户选择的目标 App 或服务。请在分享或发送前确认目标服务的隐私规则。</p>
+    </section>
+
+    <section>
+      <h2>8. 儿童隐私</h2>
+      <p>牌感面向一般塔罗学习和自我反思场景,不会主动收集儿童个人信息。如果你是未成年人,建议在监护人知情的情况下使用本 App,并避免输入真实姓名、住址、联系方式等敏感个人信息。</p>
+    </section>
+
+    <section>
+      <h2>9. 用户如何管理自己的数据</h2>
+      <p>当前版本没有云端账号,因此开发者无法远程查看、修改或删除用户设备中的数据。</p>
+      <ul>
+        <li>在 App 内继续编辑自己的复盘和个人牌义笔记。</li>
+        <li>使用设置页的 JSON 导出功能自行备份。</li>
+        <li>删除 App 以移除本机保存的数据。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>10. 隐私政策更新</h2>
+      <p>如果 App 的数据处理方式发生变化,例如加入账号、云同步、外部 AI、付费服务、广告或分析工具,我们会更新本隐私政策。重大变化上线前,会尽量在 App 或发布说明中提示用户。</p>
+    </section>
+
+    <section>
+      <h2>11. 联系我们</h2>
+      <p>如果你对隐私政策或数据处理有疑问,可以通过以下方式联系:</p>
+      <p><a href="mailto:1096443302@qq.com">1096443302@qq.com</a></p>
+    </section>
+
+    <footer>
+      <p>© 2026 shuai yuan · 牌感</p>
+    </footer>
+  </main>
+</body>
+</html>
