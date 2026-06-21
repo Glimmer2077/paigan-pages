@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>牌感</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080716;
+      --panel: rgba(27, 21, 48, 0.92);
+      --text: #f7efd9;
+      --muted: #bcb0ca;
+      --gold: #dfbd68;
+      --line: rgba(223, 189, 104, 0.34);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      color: var(--text);
+      font-family: "Songti SC", "STSong", "Iowan Old Style", Georgia, serif;
+      line-height: 1.75;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(86, 61, 142, 0.48), transparent 28rem),
+        radial-gradient(circle at 82% 28%, rgba(126, 95, 166, 0.26), transparent 24rem),
+        linear-gradient(180deg, #10102b 0%, var(--bg) 58%, #050510 100%);
+    }
+
+    main {
+      width: min(720px, calc(100% - 32px));
+      padding: 40px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--gold);
+      font-size: clamp(38px, 8vw, 64px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 12px 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    nav {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    a {
+      display: block;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--gold);
+      text-decoration: none;
+      background: rgba(8, 7, 22, 0.32);
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>牌感</h1>
+    <p>塔罗学习与自我反思工具。这里提供 App Store 审核和用户支持所需的公开页面。</p>
+    <nav>
+      <a href="privacy.html">隐私政策</a>
+      <a href="support.html">支持页面</a>
+    </nav>
+    <footer>© 2026 shuai yuan · 牌感</footer>
+  </main>
+</body>
+</html>
