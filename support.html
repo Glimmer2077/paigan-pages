@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>牌感支持</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080716;
+      --panel: rgba(27, 21, 48, 0.92);
+      --panel-2: rgba(39, 31, 70, 0.72);
+      --text: #f7efd9;
+      --muted: #bcb0ca;
+      --gold: #dfbd68;
+      --line: rgba(223, 189, 104, 0.34);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Songti SC", "STSong", "Iowan Old Style", Georgia, serif;
+      line-height: 1.75;
+      background:
+        radial-gradient(circle at 20% 12%, rgba(86, 61, 142, 0.48), transparent 28rem),
+        radial-gradient(circle at 82% 28%, rgba(126, 95, 166, 0.26), transparent 24rem),
+        linear-gradient(180deg, #10102b 0%, var(--bg) 58%, #050510 100%);
+      min-height: 100vh;
+    }
+
+    main {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    .hero,
+    section {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 16px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero {
+      padding: 40px;
+      margin-bottom: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "✦";
+      position: absolute;
+      right: 34px;
+      top: 24px;
+      color: var(--gold);
+      font-size: 28px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 28px 32px;
+      margin: 18px 0;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.12;
+    }
+
+    h2 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    p,
+    li {
+      font-size: 17px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 1.25em;
+      margin: 10px 0 0;
+    }
+
+    a {
+      color: var(--gold);
+    }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      margin-top: 10px;
+      padding: 0 18px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: linear-gradient(135deg, #f1dba5, #caa248);
+      color: #0b0818;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .note {
+      border-left: 3px solid var(--gold);
+      background: var(--panel-2);
+      padding: 14px 16px;
+      border-radius: 10px;
+    }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 18px 0 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 24px, 880px);
+        padding: 28px 0;
+      }
+
+      .hero,
+      section {
+        border-radius: 12px;
+      }
+
+      .hero {
+        padding: 30px 24px;
+      }
+
+      section {
+        padding: 22px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <h1>牌感支持</h1>
+      <p>如果你在使用牌感时遇到问题,可以通过本页面找到联系和自查方式。</p>
+    </header>
+
+    <section>
+      <h2>联系我们</h2>
+      <p>请通过下面的邮箱联系开发者。来信时建议说明你的设备型号、iOS 版本、App 版本,以及你遇到问题时正在使用哪个页面。</p>
+      <a class="contact" href="mailto:1096443302@qq.com">1096443302@qq.com</a>
+    </section>
+
+    <section>
+      <h2>常见问题</h2>
+      <ul>
+        <li>数据保存在哪里? 当前版本的数据保存在设备本机。</li>
+        <li>是否需要联网? 当前核心功能不依赖网络。</li>
+        <li>是否有账号或云同步? 当前版本没有账号、没有云同步。</li>
+        <li>是否会上传我的日记? 当前版本不会上传用户日记、问题、解读或复盘。</li>
+        <li>问题反馈会自动上传吗? 不会。只有你在 App 里主动发送反馈邮件时,邮件内容才会离开设备。</li>
+        <li>如何备份? 可以在 App 的设置页主动导出 JSON 文件。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>使用边界</h2>
+      <p class="note">牌感定位是塔罗学习与自我反思工具,不提供医疗、法律、财务等专业建议,也不承诺预测未来。如果问题涉及现实中的重大决定,请咨询对应领域的专业人士。</p>
+    </section>
+
+    <section>
+      <h2>隐私政策</h2>
+      <p>你可以在这里查看牌感的隐私政策:</p>
+      <p><a href="https://glimmer2077.github.io/paigan-pages/privacy.html">查看隐私政策</a></p>
+    </section>
+
+    <section>
+      <h2>页面信息</h2>
+      <ul>
+        <li>支持页面公开 URL:https://glimmer2077.github.io/paigan-pages/support.html</li>
+        <li>最后更新:2026-06-21</li>
+        <li>运营者 / 开发者:shuai yuan</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2026 shuai yuan · 牌感</p>
+    </footer>
+  </main>
+</body>
+</html>
